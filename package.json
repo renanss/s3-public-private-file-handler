@@ -1,0 +1,21 @@
+{
+  "name": "s3-public-private-file-handler",
+  "version": "1.0.0",
+  "description": "Project to handle S3 files",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "serverless",
+    "enterprise"
+  ],
+  "author": "Renan Soares <renanss@gmail.com>",
+  "devDependencies": {
+    "@serverless/enterprise-plugin": "latest",
+    "serverless-plugin-warmup": "^4.5.3-rc.1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.441.0"
+  }
+}

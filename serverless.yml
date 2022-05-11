@@ -1,0 +1,21 @@
+service: s3-public-private-file-handler
+app: s3-public-private-file-handler
+org: renan
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: prod
+functions:
+  upload:
+    handler: handler.upload
+    events:
+      - http:
+          path: upload-s3
+          method: get
+  download:
+    handler: handler.download
+    events:
+      - http:
+          path: download-s3
+          method: get
